@@ -1,7 +1,183 @@
-#menu
+* {
+	box-sizing: border-box;
+  }
+  
+body {
+	margin: 0;
+	font-family: "Inconsolata", sans-serif;
+	
+}
+.head
 {
 	position: fixed;
+	text-align: center;
 	width: 100%;
-	height: 35px;
+	left:0;
+	top:0;
+	background:white;
+	z-index: 99;
+}
+
+#menu
+{
+	color:black;
+	text-decoration: none;
+	font-size: 15px;
+	height: 50px;
+	padding:15px 15px 15px 15px;
+}
+.head a:link{
+	text-decoration: none;
+	color:black;
+	padding: 20px 20px 20px 20px;
+}
+.head a:hover{
+	color: #8A8A8A;
+	text-decoration: none;
+}
+
+a:visited { 
+	text-decoration: none;  
+	color: black;
+}
+.main{
+	position: relative;
+	margin-top: 150px;
 	background: white;
 }
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 25%;
+	padding: 0 4px;
+	float: left;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+
+
+  .column img:hover{opacity: 0.6; transition: 0.3s}
+  
+  .column .item {
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .column .caption {
+	margin: 0;
+	padding: 1em;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	transition: transform .5s;
+	transform: translateY(100%);
+	background: rgba(0, 0, 0, .7);
+	color: rgb(255, 255, 255);
+  }
+  
+  .column .item:hover .caption {
+	transform: translateY(0%);
+  }
+  .section{
+	  position: relative;
+	  text-align: center;
+	  vertical-align: middle;
+	  scroll-margin-top: 140px;
+	  margin-top: 25px;
+	  padding: 5px 5px 5px 5px; 
+  }
+
+
+  h1{
+	  color:white;
+	  text-align: center;
+	  letter-spacing: 4px;
+	  display: inline-flex;
+	  padding:5px;
+	  background-color:black;
+  }
+
+
+  .inside {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+  #aboutImg {
+	flex-basis: 20%;
+	-webkit-filter: drop-shadow(5px 5px 5px #666666);
+	filter: drop-shadow(5px 5px 5px #666666);
+  }
+  #aboutme {
+	padding-left: 5px;
+	flex-wrap: wrap;
+	width: 350px;
+	word-wrap: break-word;
+  }
+  #qrcode {
+	  border: 2px solid #555;
+  }
+
+	input, textarea { 
+	outline: none;
+	}
+	form {
+	position: relative;
+	width: 600px;
+	border-radius: 30px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	}
+	.form-inner {
+	padding: 40px;
+	}
+	.form-inner input,
+	.form-inner textarea {
+	font-family: inherit;
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background:lightgrey;
+	}
+	.form-inner textarea {
+	resize: none;
+	}
+	button {
+	font-family:inherit;
+	width: 30%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid black;
+	background: #272727; 
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	}
+	button:hover {
+	background:black;
+	} 
+
+	
+

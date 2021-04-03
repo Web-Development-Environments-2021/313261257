@@ -108,7 +108,7 @@ ans
       <input type="text" name="Name" placeholder="Username">
       <input type="email" name="Email" placeholder="Email">
       <textarea name="Message" placeholder="Message..." rows="5" data-emoji-picker="true"></textarea>
-      <button type="submit" href="/">Submit</button>
+      <button type="submit" href="/313261257" onclick="fun()">Submit</button>
     </div>
   </form>
 </section>
@@ -124,6 +124,13 @@ $(function(){
     $('html,body').scrollTo(this.hash,this.hash); 
   });
 });
+</script>
+<script>
+  function fun(){
+      document.getElementsByName('Name').value='';
+      document.getElementsByName('Email').value='';
+      document.getElementByName('Message').value='';
+      }
 </script>
 <script type="text/javascript">
  $(document).scroll(function() {

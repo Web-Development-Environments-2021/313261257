@@ -62,7 +62,7 @@
 <section id="playlist" class="section">
 <h1>MY PLAYLIST</h1>
 <br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2gUFUSh1NijTGtW2iPJSZcl2BqabhH7m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="60%" height="315" src="https://www.youtube.com/embed/videoseries?list=PL2gUFUSh1NijTGtW2iPJSZcl2BqabhH7m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <section id="like" class="section">
@@ -102,15 +102,14 @@ ans
 </section>
 
 <section id="contact" class="section">
-<h1>CONTACT ME</h1> <br/>
-  <form target="_blank" action="https://formsubmit.co/c857d2a4d9101158f8fd3242aec57422" method="POST">
-    <div class="form-inner">
-      <input type="text" name="Name" placeholder="Username">
-      <input type="email" name="Email" placeholder="Email">
-      <textarea name="Message" placeholder="Message..." rows="5" data-emoji-picker="true"></textarea>
-      <button type="submit" href="/313261257" onclick="fun()">Submit</button>
-    </div>
-  </form>
+  <form target="_blank" action="https://formsubmit.co/c857d2a4d9101158f8fd3242aec57422" method="POST">  <div class="form-inner">
+    <h1>CONTACT ME</h1>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message..." rows="5" data-emoji-picker="true"></textarea>
+    <button type="submit" href="/">Submit</button>
+  </div>
+</form>
 </section>
 </div>
 
@@ -125,12 +124,13 @@ $(function(){
   });
 });
 </script>
-<script>
-  function fun(){
-      document.getElementsByName('Name').value='';
-      document.getElementsByName('Email').value='';
-      document.getElementByName('Message').value='';
-      }
+<script type="text/javascript">
+  function fun() {
+
+document.getElementById("Name").value = "";
+document.getElementByName("Email").value = "";
+document.getElementByName("Message").value = "";
+}
 </script>
 <script type="text/javascript">
  $(document).scroll(function() {

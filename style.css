@@ -1,12 +1,21 @@
 * {
 	box-sizing: border-box;
+    /* background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important; */
   }
   
 body {
 	margin: 0;
 	font-family: "Inconsolata", sans-serif;
+	width: 100%;
+    height: 100%;
+    padding: 0;
+	justify-content: center;
+	align-items: center;
 	
 }
+
 .head
 {
 	position: fixed;
@@ -99,7 +108,7 @@ a:visited {
 	  vertical-align: middle;
 	  scroll-margin-top: 140px;
 	  margin-top: 25px;
-	  padding: 5px 5px 5px 5px; 
+	  padding: 5px 5px 5px 5px;
   }
 
 
@@ -134,12 +143,12 @@ a:visited {
 	  border: 2px solid #555;
   }
 
-	input, textarea { 
+  input, textarea { 
 	outline: none;
 	}
 	form {
 	position: relative;
-	width: 600px;
+	width: 80%;
 	border-radius: 30px;
 	text-align: center;
 	vertical-align: middle;
@@ -150,34 +159,37 @@ a:visited {
 	}
 	.form-inner input,
 	.form-inner textarea {
-	font-family: inherit;
 	display: block;
 	width: 100%;
 	padding: 15px;
 	margin-bottom: 10px;
 	border: none;
 	border-radius: 20px;
-	background:lightgrey;
+	background: lightgrey;
 	}
 	.form-inner textarea {
 	resize: none;
 	}
 	button {
-	font-family:inherit;
-	width: 30%;
+	width: 100%;
 	padding: 10px;
 	margin-top: 20px;
 	border-radius: 20px;
 	border: none;
 	border-bottom: 4px solid black;
-	background: #272727; 
+	background: #272727;  
 	font-size: 16px;
 	font-weight: 400;
 	color: #fff;
 	}
 	button:hover {
-	background:black;
+	background: black;
 	} 
+	@media (min-width: 600px) {
+	form {
+	width: 60%;
+	}
+	}
 
 	
 
